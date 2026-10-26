@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Falcão Climatização — Conforto térmico com precisão</title>
+  <meta name="description" content="Falcão Climatização: instalação, desinstalação, manutenção preventiva e corretiva, higienização e recarga de fluido refrigerante para ar-condicionado.">
+  <meta name="theme-color" content="#05070d">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <svg class="preloader__flake" viewBox="0 0 64 64"><use href="#flake"/></svg>
+  </div>
+
+  <!-- SVG sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="flake" viewBox="0 0 64 64">
+      <g fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M32 6v52M9.5 19l45 26M9.5 45l45-26"/>
+        <path d="M25 9l7 7 7-7M25 55l7-7 7 7M10 28l9.6-2.6L17 16M54 36l-9.6 2.6L47 48M10 36l9.6 2.6L17 48M54 28l-9.6-2.6L47 16"/>
+      </g>
+    </symbol>
+    <symbol id="wa" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.7.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/>
+    </symbol>
+  </svg>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="brand" aria-label="Falcão Climatização — início">
+        <span class="brand__mark"><svg><use href="#flake"/></svg></span>
+        <span class="brand__text">
+          <strong>FALCÃO</strong>
+          <small>Climatiza</small>
+        </span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#processo">Como funciona</a>
+        <a href="#trabalhos">Trabalhos</a>
+        <a href="#depoimentos">Clientes</a>
+        <a href="#faq">Dúvidas</a>
+        <a href="#contato" class="btn btn--sm btn--primary nav__cta">Orçamento</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero__media" data-hero-parallax>
+        <video class="hero__video is-active" muted playsinline preload="auto" poster="assets/img/hero-poster.jpg?v=2" src="assets/video/hero.mp4?v=2"></video>
+        <video class="hero__video" muted playsinline preload="auto" src="assets/video/hero.mp4?v=2"></video>
+      </div>
+      <div class="hero__overlay"></div>
+      <canvas class="hero__snow" id="snow" aria-hidden="true"></canvas>
+
+      <div class="container hero__content" data-hero-content>
+        <p class="eyebrow reveal"><span class="dot"></span> Climatização residencial e comercial</p>
+        <h1 class="hero__title">
+          <span class="line"><span>Conforto térmico</span></span>
+          <span class="line"><span>com a precisão</span></span>
+          <span class="line"><span>de um <em>falcão.</em></span></span>
+        </h1>
+        <p class="hero__lead reveal" style="--d:.5s">Instalação, manutenção e higienização de ar-condicionado com técnica, ferramentas profissionais e acabamento impecável. Sua satisfação é o nosso compromisso.</p>
+        <div class="hero__actions reveal" style="--d:.65s">
+          <a href="#contato" class="btn btn--primary magnetic">Solicitar orçamento <span class="arrow">→</span></a>
+          <a href="#servicos" class="btn btn--ghost magnetic">Ver serviços</a>
+        </div>
+        <ul class="hero__chips reveal" style="--d:.8s">
+          <li><strong>+<span data-count="500">0</span></strong> instalações</li>
+          <li><strong><span data-count="4.9" data-decimals="1">0</span>★</strong> avaliação</li>
+          <li><strong>90 dias</strong> de garantia</li>
+        </ul>
+      </div>
+
+      <a href="#sobre" class="hero__scroll" aria-label="Rolar para baixo"><span></span></a>
+    </section>
+
+    <!-- Faixa de serviços -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>Instalação</span><svg><use href="#flake"/></svg>
+        <span>Desinstalação</span><svg><use href="#flake"/></svg>
+        <span>Manutenção preventiva</span><svg><use href="#flake"/></svg>
+        <span>Manutenção corretiva</span><svg><use href="#flake"/></svg>
+        <span>Higienização</span><svg><use href="#flake"/></svg>
+        <span>Recarga de fluido refrigerante</span><svg><use href="#flake"/></svg>
+      </div>
+    </div>
+
+    <!-- SOBRE -->
+    <section class="section about" id="sobre">
+      <div class="container about__grid">
+        <div class="about__media">
+          <figure class="about__img about__img--main reveal-img" data-parallax="0.08">
+            <img src="assets/img/foto1.jpg" alt="Sala moderna climatizada com ar-condicionado split" loading="lazy">
+          </figure>
+          <figure class="about__img about__img--small reveal-img" data-parallax="-0.12" style="--d:.2s">
+            <img src="assets/img/foto3.jpg" alt="Ar-condicionado exibindo 22 graus" loading="lazy">
+          </figure>
+          <div class="about__badge reveal" style="--d:.4s">
+            <svg><use href="#flake"/></svg>
+            <span><strong>+<span data-count="8">0</span> anos</strong> deixando ambientes no clima certo</span>
+          </div>
+        </div>
+
+        <div class="about__text">
+          <p class="eyebrow reveal">Sobre a Falcão</p>
+          <h2 class="title reveal" style="--d:.1s">Do mais complexo ao mais simples, entregamos <em>qualidade</em> em conforto térmico.</h2>
+          <p class="reveal" style="--d:.2s">A Falcão Climatização nasceu da paixão por fazer bem feito. Cada visita começa com diagnóstico, segue com ferramentas calibradas (manifold, bomba de vácuo, kit de flangeamento) e termina com o ambiente limpo e o cliente satisfeito.</p>
+          <p class="reveal" style="--d:.3s">Atendemos casas, apartamentos, escritórios e comércios, com equipamentos de todas as marcas e capacidades.</p>
+
+          <ul class="about__list">
+            <li class="reveal" style="--d:.35s"><span class="check">✓</span> Técnicos qualificados e uniformizados</li>
+            <li class="reveal" style="--d:.42s"><span class="check">✓</span> Vácuo e teste de estanqueidade em toda instalação</li>
+            <li class="reveal" style="--d:.49s"><span class="check">✓</span> Acabamento limpo, tubulação organizada</li>
+            <li class="reveal" style="--d:.56s"><span class="check">✓</span> Garantia por escrito em todos os serviços</li>
+          </ul>
+
+          <div class="stats">
+            <div class="stat reveal" style="--d:.2s"><strong><span data-count="1200">0</span>+</strong><span>serviços realizados</span></div>
+            <div class="stat reveal" style="--d:.3s"><strong><span data-count="98">0</span>%</strong><span>clientes satisfeitos</span></div>
+            <div class="stat reveal" style="--d:.4s"><strong><span data-count="24">0</span>h</strong><span>retorno de orçamento</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="section services" id="servicos">
+      <div class="glow glow--a" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal">Nossos serviços</p>
+          <h2 class="title reveal" style="--d:.1s">Tudo o que o seu ar-condicionado precisa, <em>em um só lugar.</em></h2>
+        </div>
+
+        <div class="services__grid">
+          <article class="card tilt reveal" style="--d:.05s">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24"><path d="M3 7h18v7H3zM6 17v2M18 17v2M7 11h10" /></svg>
+            </div>
+            <h3>Instalação</h3>
+            <p>Split, multi-split, piso-teto e cassete. Tubulação dimensionada, vácuo e teste de pressão para o equipamento render o máximo.</p>
+            <a href="#contato" class="card__link">Orçar instalação →</a>
+          </article>
+
+          <article class="card tilt reveal" style="--d:.12s">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24"><path d="M3 7h18v7H3zM12 17v5M9 19l3 3 3-3" /></svg>
+            </div>
+            <h3>Desinstalação</h3>
+            <p>Remoção segura com recolhimento do fluido na condensadora, sem perdas e sem danos, ideal para mudanças e reformas.</p>
+            <a href="#contato" class="card__link">Orçar desinstalação →</a>
+          </article>
+
+          <article class="card tilt reveal" style="--d:.19s">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z M9 12l2 2 4-4" /></svg>
+            </div>
+            <h3>Manutenção preventiva</h3>
+            <p>Planos periódicos que evitam quebras, reduzem o consumo de energia e prolongam a vida útil do seu equipamento.</p>
+            <a href="#contato" class="card__link">Agendar preventiva →</a>
+          </article>
+
+          <article class="card tilt reveal" style="--d:.05s">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z" /></svg>
+            </div>
+            <h3>Manutenção corretiva</h3>
+            <p>Diagnóstico preciso de placas, sensores, capacitores, vazamentos e compressores. Seu ar funcionando de novo, rápido.</p>
+            <a href="#contato" class="card__link">Solicitar reparo →</a>
+          </article>
+
+          <article class="card tilt reveal" style="--d:.12s">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5" /></svg>
+            </div>
+            <h3>Higienização</h3>
+            <p>Limpeza completa de evaporadora e condensadora com produtos bactericidas. Ar mais puro, sem cheiro e sem fungos.</p>
+            <a href="#contato" class="card__link">Agendar higienização →</a>
+          </article>
+
+          <article class="card tilt reveal" style="--d:.19s">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 12l4-3M12 5v1.5M5 12h1.5M17.5 12H19" /></svg>
+            </div>
+            <h3>Recarga de fluido</h3>
+            <p>Localização e correção de vazamentos, seguida de carga precisa de gás refrigerante medida no manifold e na balança.</p>
+            <a href="#contato" class="card__link">Orçar recarga →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FRASE PARALLAX -->
+    <section class="quote" aria-label="Nosso compromisso">
+      <div class="quote__bg" data-parallax-bg style="background-image:url('assets/img/foto8.jpg')"></div>
+      <div class="quote__overlay"></div>
+      <div class="container quote__inner">
+        <svg class="quote__flake spin-slow" aria-hidden="true"><use href="#flake"/></svg>
+        <blockquote class="quote__text split-words">“Sua satisfação é o nosso compromisso. Em cada tubo, em cada conexão, em cada grau.”</blockquote>
+        <p class="quote__by reveal">Equipe Falcão Climatização</p>
+      </div>
+    </section>
+
+    <!-- PROCESSO -->
+    <section class="section process" id="processo">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <p class="eyebrow reveal">Como funciona</p>
+          <h2 class="title reveal" style="--d:.1s">Do primeiro contato ao <em>ar gelando</em> em 4 passos.</h2>
+        </div>
+
+        <ol class="steps" id="steps">
+          <li class="step reveal" style="--d:.05s">
+            <span class="step__n">1</span>
+            <h3>Contato</h3>
+            <p>Você chama no WhatsApp ou preenche o formulário com o serviço desejado.</p>
+          </li>
+          <li class="step reveal" style="--d:.15s">
+            <span class="step__n">2</span>
+            <h3>Orçamento</h3>
+            <p>Avaliamos o ambiente e enviamos um orçamento transparente em até 24h.</p>
+          </li>
+          <li class="step reveal" style="--d:.25s">
+            <span class="step__n">3</span>
+            <h3>Execução</h3>
+            <p>Equipe pontual, ferramentas profissionais e procedimento técnico completo.</p>
+          </li>
+          <li class="step reveal" style="--d:.35s">
+            <span class="step__n">4</span>
+            <h3>Garantia</h3>
+            <p>Testes finais, orientação de uso e garantia por escrito do serviço.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CARROSSEL -->
+    <section class="section works" id="trabalhos">
+      <div class="container works__head">
+        <div>
+          <p class="eyebrow reveal">Nosso trabalho</p>
+          <h2 class="title reveal" style="--d:.1s">Mais um cliente <em>satisfeito.</em></h2>
+        </div>
+        <a href="#" class="btn btn--ghost magnetic reveal" style="--d:.2s" target="_blank" rel="noopener">@falcaoclimatiza</a>
+      </div>
+
+      <div class="carousel" aria-label="Galeria de trabalhos">
+        <div class="carousel__track" id="carouselTrack">
+          <figure class="slide"><img src="assets/img/foto2.jpg" alt="Split instalado na parede" loading="lazy"><figcaption><span>Instalação</span>Split 12.000 BTUs</figcaption></figure>
+          <figure class="slide slide--tall"><img src="assets/img/foto4.jpg" alt="Condensadora instalada em parede externa" loading="lazy"><figcaption><span>Instalação</span>Condensadora externa</figcaption></figure>
+          <figure class="slide"><img src="assets/img/foto5.jpg" alt="Três condensadoras alinhadas" loading="lazy"><figcaption><span>Comercial</span>Multi-split em escritório</figcaption></figure>
+          <figure class="slide slide--tall"><img src="assets/img/foto6.jpg" alt="Condensadora na lateral de prédio" loading="lazy"><figcaption><span>Preventiva</span>Revisão completa</figcaption></figure>
+          <figure class="slide"><img src="assets/img/foto7.jpg" alt="Casa moderna com unidade externa" loading="lazy"><figcaption><span>Residencial</span>Projeto completo</figcaption></figure>
+          <figure class="slide slide--tall"><img src="assets/img/foto9.jpg" alt="Ar-condicionado em parede amarela" loading="lazy"><figcaption><span>Higienização</span>Limpeza bactericida</figcaption></figure>
+          <figure class="slide"><img src="assets/img/foto10.jpg" alt="Quatro condensadoras em parede cinza" loading="lazy"><figcaption><span>Comercial</span>Instalação em série</figcaption></figure>
+          <figure class="slide slide--tall"><img src="assets/img/foto11.jpg" alt="Unidades industriais de ar-condicionado" loading="lazy"><figcaption><span>Corretiva</span>Recarga de fluido</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section class="section perks">
+      <div class="container perks__grid">
+        <div class="perks__intro">
+          <p class="eyebrow reveal">Por que a Falcão</p>
+          <h2 class="title reveal" style="--d:.1s">Detalhes que fazem <em>diferença</em> no resultado.</h2>
+          <p class="reveal" style="--d:.2s">Trabalho técnico é invisível quando bem feito: o ar gela, a conta de luz não assusta e o equipamento dura anos. É isso que buscamos em cada atendimento.</p>
+          <a href="#contato" class="btn btn--primary magnetic reveal" style="--d:.3s">Falar com um técnico <span class="arrow">→</span></a>
+        </div>
+        <div class="perks__list">
+          <div class="perk reveal" style="--d:.05s"><svg><use href="#flake"/></svg><div><h3>Ferramental profissional</h3><p>Bomba de vácuo, manifold digital, flangeador e balança de carga.</p></div></div>
+          <div class="perk reveal" style="--d:.12s"><svg><use href="#flake"/></svg><div><h3>Pontualidade</h3><p>Horário combinado é horário cumprido, e avisamos se algo mudar.</p></div></div>
+          <div class="perk reveal" style="--d:.19s"><svg><use href="#flake"/></svg><div><h3>Ambiente limpo</h3><p>Protegemos móveis e piso e deixamos tudo organizado ao final.</p></div></div>
+          <div class="perk reveal" style="--d:.26s"><svg><use href="#flake"/></svg><div><h3>Preço justo</h3><p>Orçamento detalhado, sem surpresas e com várias formas de pagamento.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="section testimonials" id="depoimentos">
+      <div class="glow glow--b" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section__head section__head--center">
+          <p class="eyebrow reveal">Depoimentos</p>
+          <h2 class="title reveal" style="--d:.1s">Quem contratou, <em>recomenda.</em></h2>
+        </div>
+        <div class="tgrid">
+          <figure class="tcard reveal" style="--d:.05s">
+            <div class="stars">★★★★★</div>
+            <blockquote>Instalação impecável, tubulação toda organizada e explicaram tudo sobre o uso. Super recomendo!</blockquote>
+            <figcaption><span class="avatar">M</span><div><strong>Mariana S.</strong><small>Instalação residencial</small></div></figcaption>
+          </figure>
+          <figure class="tcard reveal" style="--d:.15s">
+            <div class="stars">★★★★★</div>
+            <blockquote>Meu ar estava com cheiro ruim e pingando. Depois da higienização parece novo. Atendimento nota 10.</blockquote>
+            <figcaption><span class="avatar">R</span><div><strong>Rafael T.</strong><small>Higienização</small></div></figcaption>
+          </figure>
+          <figure class="tcard reveal" style="--d:.25s">
+            <div class="stars">★★★★★</div>
+            <blockquote>Fazemos a preventiva do escritório com a Falcão. Pontuais, organizados e preço justo.</blockquote>
+            <figcaption><span class="avatar">C</span><div><strong>Clínica Bem Estar</strong><small>Manutenção preventiva</small></div></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq" id="faq">
+      <div class="container faq__grid">
+        <div>
+          <p class="eyebrow reveal">Dúvidas frequentes</p>
+          <h2 class="title reveal" style="--d:.1s">Perguntas que sempre <em>recebemos.</em></h2>
+          <figure class="faq__img reveal-img" data-parallax="0.06">
+            <img src="assets/img/foto2.jpg" alt="Ar-condicionado split na parede" loading="lazy">
+          </figure>
+        </div>
+        <div class="accordion">
+          <details class="acc reveal" style="--d:.05s" open>
+            <summary>De quanto em quanto tempo devo higienizar o ar?</summary>
+            <p>Para uso residencial, recomendamos a cada 6 meses. Em ambientes comerciais ou com uso intenso, a cada 3 meses.</p>
+          </details>
+          <details class="acc reveal" style="--d:.1s">
+            <summary>A instalação inclui material?</summary>
+            <p>Trabalhamos com instalação com ou sem material. No orçamento detalhamos tubulação, cabos, suportes e dreno necessários.</p>
+          </details>
+          <details class="acc reveal" style="--d:.15s">
+            <summary>Vocês atendem todas as marcas?</summary>
+            <p>Sim. Atendemos LG, Samsung, Gree, Midea, Daikin, Elgin, Fujitsu, Springer, Consul e outras.</p>
+          </details>
+          <details class="acc reveal" style="--d:.2s">
+            <summary>Meu ar não gela. Precisa de recarga de gás?</summary>
+            <p>Nem sempre. Pode ser sujeira, sensor, capacitor ou vazamento. Fazemos o diagnóstico antes de qualquer recarga.</p>
+          </details>
+          <details class="acc reveal" style="--d:.25s">
+            <summary>Qual é a garantia dos serviços?</summary>
+            <p>Todos os serviços têm garantia de 90 dias, registrada por escrito no comprovante de atendimento.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section contact" id="contato">
+      <div class="contact__bg" data-parallax-bg style="background-image:url('assets/img/foto7.jpg')"></div>
+      <div class="contact__overlay"></div>
+      <div class="container contact__grid">
+        <div class="contact__info">
+          <p class="eyebrow reveal">Orçamento sem compromisso</p>
+          <h2 class="title reveal" style="--d:.1s">Vamos deixar seu ambiente no <em>clima certo?</em></h2>
+          <p class="reveal" style="--d:.2s">Preencha o formulário e você será direcionado para o nosso WhatsApp com a mensagem pronta.</p>
+          <ul class="contact__list">
+            <li class="reveal" style="--d:.25s"><span>WhatsApp</span><a href="https://wa.me/5500000000000" target="_blank" rel="noopener">(00) 00000-0000</a></li>
+            <li class="reveal" style="--d:.3s"><span>E-mail</span><a href="mailto:contato@falcaoclimatiza.com.br">contato@falcaoclimatiza.com.br</a></li>
+            <li class="reveal" style="--d:.35s"><span>Atendimento</span>Seg a Sáb · 8h às 18h</li>
+            <li class="reveal" style="--d:.4s"><span>Região</span>Sua cidade e região metropolitana</li>
+          </ul>
+        </div>
+
+        <form class="form reveal" style="--d:.2s" id="form" novalidate>
+          <h3>Solicite seu orçamento</h3>
+          <label class="field"><input type="text" name="nome" placeholder=" " required><span>Seu nome</span></label>
+          <label class="field"><input type="tel" name="telefone" placeholder=" " required><span>Telefone / WhatsApp</span></label>
+          <label class="field field--select">
+            <select name="servico" required>
+              <option value="" disabled selected hidden></option>
+              <option>Instalação</option>
+              <option>Desinstalação</option>
+              <option>Manutenção preventiva</option>
+              <option>Manutenção corretiva</option>
+              <option>Higienização</option>
+              <option>Recarga de fluido refrigerante</option>
+            </select>
+            <span>Serviço desejado</span>
+          </label>
+          <label class="field"><textarea name="mensagem" rows="3" placeholder=" "></textarea><span>Detalhes (opcional)</span></label>
+          <button type="submit" class="btn btn--primary btn--block">Enviar pelo WhatsApp <svg class="ico"><use href="#wa"/></svg></button>
+          <p class="form__msg" id="formMsg" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#inicio" class="brand">
+          <span class="brand__mark"><svg><use href="#flake"/></svg></span>
+          <span class="brand__text"><strong>FALCÃO</strong><small>Climatiza</small></span>
+        </a>
+        <p class="footer__tag">Sua satisfação é o nosso compromisso.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg></a>
+          <a href="https://wa.me/5500000000000" aria-label="WhatsApp"><svg viewBox="0 0 24 24" class="fill"><use href="#wa"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.5v5l4.5-2.5z" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="#servicos">Instalação</a></li>
+          <li><a href="#servicos">Desinstalação</a></li>
+          <li><a href="#servicos">Manutenção preventiva</a></li>
+          <li><a href="#servicos">Manutenção corretiva</a></li>
+          <li><a href="#servicos">Higienização</a></li>
+          <li><a href="#servicos">Recarga de fluido</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#processo">Como funciona</a></li>
+          <li><a href="#trabalhos">Trabalhos</a></li>
+          <li><a href="#faq">Dúvidas</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li>(00) 00000-0000</li>
+          <li>contato@falcaoclimatiza.com.br</li>
+          <li>Rua Exemplo, 123, Centro</li>
+          <li>Seg a Sáb · 8h às 18h</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> Falcão Climatização. Todos os direitos reservados.</span>
+      <span>CNPJ 00.000.000/0001-00</span>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5500000000000" class="wa-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg><use href="#wa"/></svg>
+  </a>
+
+  <script src="js/main.js?v=2"></script>
+</body>
+</html>
